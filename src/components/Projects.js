@@ -37,7 +37,7 @@ export default function Projects() {
                     <p className="card-content">Static web design that shows information about the author, 
                         Curriculum vitae where employers can download from, 
                         And sending email of concerns and send to CMS API</p>
-                    <a href="https://github.com/amancoronel/lead-tracker-api" target="_blank" rel="noreferrer"><button>Visit Repository</button></a>
+                    <a href="https://prince-coronel-portfolio.herokuapp.com/" target="_blank" rel="noreferrer"><button>Visit Site</button></a>
                 </div>
                 <div className="projects-card">
                     <p className="card-title">Portfolio/CMS Dashboard</p>
