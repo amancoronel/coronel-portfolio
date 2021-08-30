@@ -1,0 +1,78 @@
+.banner {
+    grid-column-end: span 3;
+    display: grid;
+    padding: 3em 3em;
+    grid-auto-rows: auto;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    grid-gap: 1rem;
+    justify-content: center;
+    background: url(../images/bg.png);
+    /* background-attachment: fixed; */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.banner-image {
+    /* border: 1px solid; */
+    height: 20em;
+    background: url(../images/author.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.banner-image:hover {
+    background-image: url(../images/author2.png);
+}
+
+.banner-text {
+    text-align-last: left;
+    -ms-text-align-last: left;
+    -moz-text-align-last: left;
+    align-items: center;
+    justify-content: center;
+}
+
+.banner-title1 {
+    font-size: 40px;
+    font-weight: 900;
+}
+
+
+.banner-title2 {
+    font-size: 70px;
+    font-weight: 900;
+}
+
+.banner-title3 {
+    font-size: 25px;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 20px;
+}
+
+@media screen and (max-width: 800px) { 
+    .banner {
+        grid-template-columns: 1fr;
+        grid-gap: 1rem;
+    }
+
+    .banner-image {
+        grid-column: 1;
+        grid-row: 1;
+        width: 100%;
+    }
+
+    .banner-text {
+        grid-column: 1;
+        grid-row: 2;
+        width: 100%;
+    }
+
+    .banner-title1::after {
+        content:none;
+    }
+}

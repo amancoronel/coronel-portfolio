@@ -1,0 +1,94 @@
+.skills-wrapper {
+    grid-column-end: span 3;
+    padding-bottom: 100px;
+    background-color: #fff;
+}
+.skills {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.skills-icon-div {
+    display: grid;
+    grid-gap: 10px;
+    padding: 20px 150px;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.skills-icon-item {
+    font-size: 50px;
+    text-shadow: 0 4px 4px 0 rgba(0,0,0,0.2);
+    /* transform-origin: center; */
+}
+
+.skills-icon-item:hover {
+    transform-origin: 0 0;
+    transform: translate(-100%, 50%) scale(1.5) translate(100%, -50%);
+    text-shadow: 0 8px px 0 rgba(0,0,0,0.2);
+}
+
+.skill-icon-item-div {
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    transition: 0.3s;
+    margin-left: 10px;
+}
+
+.skill-icon-item-div:hover {
+    transform-origin: 0 0;
+    transform: scale(1.2);
+    background-color: white;
+    text-shadow: 0 8px 8px 0 rgba(0,0,0,0.2);
+}
+
+.skills-image-div {
+    display: block;
+    background: url(../images/working.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:contain;
+}
+
+.tooltiptext {
+    visibility: hidden;
+    width: 45px;
+    font-size: 8px;
+    background-color: rgba(0, 119, 255, 0.2);
+    color: #000;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 10px;
+    position: absolute;
+    bottom: 47px;
+    left: -6px;
+    z-index: 1;
+}
+
+.skill-icon-item-div:hover .tooltiptext {
+    visibility: visible;
+}
+
+
+@media screen and (max-width: 800px) { 
+
+    .skills {
+        grid-template-columns: repeat(1, 1fr);
+        padding: 20px;
+    }
+
+    .skills-icon-div {
+        padding: 0;
+
+    }
+
+    .skills-image-div {
+        display: none;
+
+    }
+
+    .skill-icon-item-div {
+        margin-left: 24px;
+    }
+}

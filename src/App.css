@@ -7,32 +7,45 @@
   pointer-events: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/*custom font*/
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
+
+* {
+  /* box-sizing: border-box; */
+  padding: 0;
+  margin: 0;
+  text-align-last: left;
+  font-size: 20px;
+  font-family: montserrat, arial, verdana;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.title {
+  /* font-weight: 900; */
+  font-size: xx-large;
+  text-align-last: center;
+  padding: 50px 0;
 }
 
-.App-link {
-  color: #61dafb;
+.main-div {
+  display: grid;
+  background-color: #e0dee0;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+hr {
+  grid-column-end: span 3;
+  border: 0;
+  height: 1px;
+  background-image: -webkit-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
+  background-image: -moz-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
+  background-image: -ms-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
+  background-image: -o-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
+}
+
+@media screen and (max-width: 800px) {
+  * {
+    text-align-last: center;
+    text-align: center;
   }
 }

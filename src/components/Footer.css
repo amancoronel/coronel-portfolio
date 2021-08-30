@@ -1,0 +1,11 @@
+.footer-wrapper {
+    grid-column-end: span 3;
+}
+
+.footer {
+    align-items: center;
+    justify-items: center;
+    height: 50px;
+
+    padding-bottom: 30px;
+}
