@@ -1,8 +1,6 @@
-import axios from "axios";
-
-axios.defaults.withCredentials = true;
+import api from '../api/sendEmail';
 const sendEmail = (form) => {
-    axios.post("https://cms-api-ts.herokuapp.com/api/addEmail", form)
+    api.post("/addEmail", form)
     .then((response) => {
         console.log("response", response);
     }).catch((e) => {
