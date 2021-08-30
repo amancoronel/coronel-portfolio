@@ -28,7 +28,7 @@ export default function Projects() {
                     <p className="role">Role: Creator/Main Contributor</p>
                     <p className="card-content">Api service made with node js and express js written in Typescript 
                         for a CMS which is this Portfolio controlled with a admin dashboard.</p>
-                    <a href="https://github.com/amancoronel/lead-tracker-api" target="_blank" rel="noreferrer"><button>Visit Repository</button></a>
+                    <a href="https://github.com/amancoronel/cms-api-ts" target="_blank" rel="noreferrer"><button>Visit Repository</button></a>
                 </div>
                 <div className="projects-card">
                     <p className="card-title">Portfolio</p>
